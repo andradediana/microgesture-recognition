@@ -135,17 +135,15 @@ The notebooks currently read these from Kaggle (`/kaggle/input/datasets/...`) an
 1. Obtain the data and the helper files above.
 2. Open the notebook in Kaggle, Colab or Jupyter and update the data paths (`train_path`, `DATA`, `parsers['data']`, and so on).
 3. Run the cells in order. A GPU is recommended for the offline notebook. Feature extraction in the online notebook is slow because it processes the full recordings.
-4. Cells for the Optuna study and the ablation experiments are commented out. Uncomment them to reproduce those experiments.
 
 ### Requirements
 
 - Python 3.10+
 - `torch`, `numpy`, `scipy`, `pandas`, `scikit-learn`, `matplotlib`
 - `tensorflow` (only used for seeding in the offline notebook), `opencv-python`, `kagglehub`
-- `optuna`, `optuna-dashboard`, `plotly` (for the Optuna plots)
 
 ```bash
-pip install torch numpy scipy pandas scikit-learn matplotlib tensorflow opencv-python kagglehub optuna optuna-dashboard plotly
+pip install torch numpy scipy pandas scikit-learn matplotlib tensorflow opencv-python kagglehub 
 ```
 
 ## Notes and limitations
@@ -159,5 +157,4 @@ pip install torch numpy scipy pandas scikit-learn matplotlib tensorflow opencv-p
 - Yan, S., Xiong, Y., & Lin, D. (2018). Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition. *AAAI*.
 - Liu, Z., Zhang, H., Chen, Z., Wang, Z., & Ouyang, W. (2020). Disentangling and Unifying Graph Convolutions for Skeleton-Based Action Recognition. *CVPR*.
 - Lin, T.-Y., Goyal, P., Girshick, R., He, K., & Dollár, P. (2017). Focal Loss for Dense Object Detection. *ICCV*.
-- Akiba, T., Sano, S., Yanase, T., Ohta, T., & Koyama, M. (2019). Optuna: A Next-generation Hyperparameter Optimization Framework. *KDD*.
 - Chen, Y., Zhang, Z., Yuan, C., Li, B., Deng, Y., & Hu, W. (2021). Channel-wise topology refinement graph convolution for skeleton-based action recognition. arXiv. doi.org.
